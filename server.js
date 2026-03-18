@@ -6,7 +6,7 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // Connect to MongoDB
-mongoose.connect("mongodb://127.0.0.1:27017/studentDB")
+mongoose.connect("mongodb+srv://sudampanda496_db_user:lEgUkKHEi0zJcL4S@cluster0.86h8xws.mongodb.net/studentDB")
 .then(() => console.log("MongoDB Connected"))
 .catch(err => console.log(err));
 
